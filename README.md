@@ -11,4 +11,4 @@ A website to randomly generate a password from 8-128 characters in length, using
 </ul>
 
 ## Website
-https://foresterkm.github.io/my-portfolio
+https://foresterkm.github.io/cool-password-generator/
