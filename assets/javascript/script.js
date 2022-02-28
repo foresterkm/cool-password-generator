@@ -21,13 +21,14 @@ var generatePassword = function () {
   promptNumber = promptNumber.toLowerCase();
 
   if ((promptUpper === 'yes') && (promptLower === 'yes') && (promptNumber === 'yes')) {
-    char = (upper + lower + num)
+    ///how to add strings?
+    char = upper.concat(lower,num)
   } else if ((promptUpper === 'yes') && (promptLower === 'yes')) {
-    char = (upper + lower)
+    char = upper.concat(lower,num)
   } else if ((promptUpper === 'yes') && (promptNumber === 'yes')) {
-    char = (upper + num)
+    char = upper.concat(num)
   } else if ((promptLower === 'yes') && (promptNumber === 'yes')) {
-    char = (lower + num)
+    char = lower.concat(num)
   } else if (promptUpper === 'yes') {
     char = upper
   } else if (promptLower === 'yes') {
@@ -38,7 +39,7 @@ var generatePassword = function () {
   //what to do with it
   var pword = '';
   for (var i = 0; i < length; i++) {
-    pword += char.charAt(Math.floor(Math.random() * char.length));
+    pword += char.charAt(Math.floor(Math.random() * length));
   }
   return pword;
 };
