@@ -4,7 +4,7 @@ var lower = 'abcdefjhijklmnopqrstuvwxyz'
 var num = '0123456789'
 // start with an empty character variable, add to it later
 var char = ''
-//generate a random password length between 8 & 25
+//generate a random password length between 8 & 128
 var length = Math.floor((Math.random() * 17) + 8);
 //do you want to include upper?
 var promptUpper = window.prompt('Would you like your password to include UPPERCASE letters? Enter "yes" or "no"');
